@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink City Jaipur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        const text = "Experience the Vibrancy of Jaipur";
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 50);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", typeEffect);
+
+    </script>
+</head>
+<body style="font-family: roboto;">
+    <header>
+        <h1>Welcome to Pink City Jaipur</h1>
+        <h3>The Land of Heritage, Culture, and Royalty</h3>
+    </header>
+
+    <nav>
+        <a href="1tourist.html">Home</a>
+        <a href="gallery.html"> Gallery</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="#about">About Jaipur</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#contact">Contact</a>
+        
+    </nav>
+
+    <section class="hero">
+        <h1 class="top">
+            <span class="typewriter-text" id="typewriter"></span>
+        </h1>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Jaipur</h2>
+        <p>Jaipur, famously known as the Pink City, is a blend of tradition, culture, and history. It is the capital of Rajasthan, known for its stunning palaces, colorful markets, and historic landmarks. From the majestic Amber Fort to the intricate architecture of Hawa Mahal, Jaipur offers a glimpse into India's royal past.</p>
+    </section>
+
+    <section id="attractions" class="section">
+        <h2>Top Attractions</h2>
+        <div class="cards">
+            <a href="City-Palace.html" target="_blank">
+                <div class="card">
+                    <img src="city palace.webp" > 
+                    <h3>City Palace</h3>
+                    <p>A grand palace complex that reflects a blend of Rajput and Mughal architecture.</p>
+                </div>
+            </a>
+            <a href="hawamahal.html" target="_blank">
+                <div class="card">
+                    <img src="hawamahal.jpg" >
+                    <h3>Hawa Mahal</h3>
+                    <p>The iconic Palace of Winds, with its unique facade designed for royal ladies to observe street life.</p>
+                </div>
+            </a>
+
+            <a href="amberfort.html" target="_blank">
+            <div class="card">
+                <img src="amber fort.jpg" >
+                <h3>Amber Fort</h3>
+                <p>A stunning fort located on a hilltop, showcasing Rajput architecture and scenic views.</p>
+            </div>
+            </a>
+                        
+            <a href="jalmahal.html" target="_blank">
+            <div class="card">
+                <img src="jalmahal.jpg" >
+                <h3>Jal Mahal</h3>
+                <p>A Beautiful Palace Surrounded by the Calm Waters of History.</p>
+            </div>
+            </a>
+            <a href="Nahargarhfort.html" target="_blank">
+            <div class="card">
+                <img src="Nahargarhfort.jpg" > 
+                <h3>Nahargarh fort</h3>
+                <p>Known for its breathtaking views of the city, this fort is a popular sunset spot.</p>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="hotel" class="section">
+        <h2>Book Hotel Now</h2>
+    <div class="hotels">
+        <div class="hotel">
+            <img src="hotel.webp" alt="">
+        </div>
+        <div class="hotel">
+        <img src="hotelin.jpg" alt="">
+        </div>
+        <center>
+            <Button><a href="hotel-booking.html" style="text-decoration: none;">Book Now</a></Button>
+        </center>
+    </div>
+
+
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Plan your trip to Jaipur today! For more information, contact us at <a href="mailto:info@pinkcityjaipur.com">info@pinkcityjaipur.com</a>.</p>
+
+        
+    </section>
+</body>
+</html>
