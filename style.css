@@ -208,6 +208,7 @@ a{
     background-image: url(backgroundform.jpg);
     background-size: cover;
     background-position: center;
+    filter: blur(8px);
 }
 
 
